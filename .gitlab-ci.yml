@@ -1,0 +1,12 @@
+image: node:latest
+
+before_script:
+  - npm i
+
+test:
+  script:
+    - npm run build
+
+show-ver:
+  script:
+    - node -v
