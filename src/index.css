@@ -1,0 +1,83 @@
+/* ---- Cross Button ---- */
+
+.cross {
+    background-color: transparent;
+    color: red;
+    border-radius: 12px;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    cursor: pointer;
+  }
+  
+  .cross::before {
+    content: "\2716";
+  }
+
+  .pos-relative {
+    position: relative;
+  }
+
+/* ---- V Button ---- */
+
+.victor {
+    background-color: transparent;
+    color: limeGreen;
+    border-radius: 12px;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+  }
+  
+  .victor::before {
+    content: "\2714";
+  }
+
+  /* ---- Flex-box ---- */
+
+  .flex-container-center {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .flex-container-center li {
+    display: inline-block;
+    margin: 0px 15px;
+  }
+  .flex-container-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-end {
+    align-self: flex-end;
+  }
+  /* ---- Font-size ---- */
+
+  .nav-font-size {
+    font-size: 1.2rem;
+  }
+
+  .content-font-size {
+    font-size: 1.1rem;
+    margin: 10px 0px !important;
+  }
+
+  /* ---- Chinese Font ---- */
+
+  .chinese-font {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 17px;
+    letter-spacing: 2.5px;
+    width: 290px;
+    margin-top: 50px;
+    margin-left: calc(50% - 320px/2);
+  }

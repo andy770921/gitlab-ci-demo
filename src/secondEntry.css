@@ -1,0 +1,141 @@
+
+  /* ---- Flex-box ---- */
+
+  .flex-container-center {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .flex-container-center li {
+    display: inline-block;
+    margin: 0px 10%;
+  }
+  .flex-container-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-container-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .flex-end {
+    align-self: flex-end;
+  }
+  .flex-3 {
+    flex: 3;
+  }
+  .flex-1 {
+    flex: 1;
+  }
+  /* ---- Font-size ---- */
+
+  .nav-font-size {
+    font-size: 1.2rem;
+  }
+
+  .content-font-size {
+    font-size: 1.1rem;
+    margin: 10px 0px !important;
+  }
+
+  /* ---- Chinese Font ---- */
+
+  .chinese-font {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.5px;
+    margin-left: 50px;
+  }
+
+    /* ---- Margin ---- */
+
+    .margin-0 {
+      margin: 0px !important;
+    }
+
+    /* ---- Board CSS Grid ---- */
+    :root {
+      --gird-width: 500px;
+      --rank-item-margin: 30px;
+    }
+
+
+    .grid-container {
+      width: var(--gird-width);
+      height: var(--gird-width);
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: "1x1 1x2 1x3" "2x1 2x2 2x3" "3x1 3x2 3x3";
+
+      margin: 50px 0px 20px;
+    }
+    .div-1x1 {
+      grid-area: 1x1;
+      background-color: lightgray;
+    }
+    .div-1x2 {
+      grid-area: 1x2;
+      background-color: limegreen;
+    }
+    .div-1x3 {
+      grid-area: 1x3;
+      background-color: lightgray;
+    }
+    .div-2x1 {
+      grid-area: 1x1;
+      background-color: limegreen;
+    }
+    .div-2x2 {
+      grid-area: 1x2;
+      background-color: lightgray;
+    }
+    .div-2x3 {
+      grid-area: 1x3;
+      background-color: limegreen;
+    }
+    .div-3x1 {
+      grid-area: 1x1;
+      background-color: lightgray;
+    }
+    .div-3x2 {
+      grid-area: 1x2;
+      background-color: limegreen;
+    }
+    .div-3x3 {
+      grid-area: 1x3;
+      background-color: lightgray;
+    }
+    .grid-inner-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 5em;
+    }
+
+   /* ---- Rank CSS ---- */
+
+  .list-name-text {
+    width: 200px;
+    margin-left: var(--rank-item-margin);
+    font-size: 2em;
+  }
+  .list-times-text {
+    margin-left: auto;
+    margin-right: var(--rank-item-margin);
+  }
+  .padding-large-item.padding-large-item {
+    padding: 20px 20px;
+  }
+  .btn-center {
+    width: 130px;
+    margin-top: 25px;
+    margin-left: calc(50% - 130px/2);
+  }
+
+  
+   /* ---- add Cursor ---- */
+
+   .add-cursor {
+     cursor: pointer;
+   }
