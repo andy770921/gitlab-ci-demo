@@ -8,7 +8,7 @@ stages:
 before_script:
   - npm i
 
-build:
+build-file:
   stage: build
   script:
     - npm run build
@@ -22,3 +22,12 @@ show-ver:
   script:
     - node -v
     - echo "Finish version check!"
+deploy-to-firebase:
+  stage: deploy
+  dependencies:
+    - build-file
+  script:
+    - firebase use "to-do-list-and-puzzle" --token $FIREBASE_TOKEN
+    - firebase deploy
+    - echo "Finish deploy!"
+    
