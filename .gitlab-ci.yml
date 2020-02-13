@@ -27,6 +27,7 @@ deploy-to-firebase:
   dependencies:
     - build-file
   script:
+    - npm install firebase-tools
     - firebase use "to-do-list-and-puzzle" --token $FIREBASE_TOKEN
     - firebase deploy
     - echo "Finish deploy!"
