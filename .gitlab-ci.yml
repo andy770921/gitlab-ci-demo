@@ -1,12 +1,28 @@
 image: node:latest
 
+stages:
+  - build
+  - deploy
+  - test
+
 before_script:
   - npm i
 
 build:
+  stage: build
+  tags:
+    - linux
+    - b
   script:
     - npm run build
+  artifacts:
+      paths:
+        - dist/
 
 show-ver:
+  stage: test
+  tags:
+    - linux
+    - t
   script:
     - node -v
