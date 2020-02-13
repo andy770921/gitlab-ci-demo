@@ -14,14 +14,16 @@ build-file:
     - npm run build
     - echo "Finish build!"
   artifacts:
-      paths:
-        - dist/
+      name: "$CI_JOB_NAME"
+      untracked: true
+      expire_in: 1 week
 
 show-ver:
   stage: test
   script:
     - node -v
     - echo "Finish version check!"
+
 deploy-to-firebase:
   stage: deploy
   dependencies:
