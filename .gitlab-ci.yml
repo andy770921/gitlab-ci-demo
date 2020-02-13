@@ -17,6 +17,8 @@ build-file:
       name: "$CI_JOB_NAME"
       untracked: true
       expire_in: 1 week
+      paths:
+        - dist/
 
 show-ver:
   stage: test
