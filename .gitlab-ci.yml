@@ -34,5 +34,5 @@ deploy-to-firebase:
     - npm install -g firebase-tools
     - firebase use --token $FIREBASE_TOKEN
     - firebase deploy
-    - echo "Finish deploy!"
+    - echo "Finish deploy!!"
     
